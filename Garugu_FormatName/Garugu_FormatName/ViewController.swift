@@ -23,7 +23,8 @@ class ViewController: UIViewController {
     @IBAction func onClickOfSubmit(_ sender: Any) {
         var firstName = firstNameTextField.text!
         var lastName = lastNameTextField.text!
-        fullNameLabel.text = "Details \r\n Full Name : \(lastNameTextField.text!), \(firstNameTextField.text!)"
+        var combine = "Details \n\nFull Name : \(firstName), \(lastName)"
+        fullNameLabel.text = combine
         initialsLabel.text = "Initials : \(firstName.first!)\(lastName.first!)"
     }
     
